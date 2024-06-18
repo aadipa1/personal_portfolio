@@ -6,7 +6,7 @@ const ContactSection = () => {
   return (
     <section className="flex flex-col md:flex-row my-12 py-24 items-center md:items-start md:justify-start md:px-12 max-w-5xl mx-auto">
       <div className="md:w-2/3 mb-6 md:mb-0 md:mr-12">
-        <h5 className="text-xl font-bold text-white my-2">Let's Connect</h5>
+        <h5 className="text-xl font-bold text-white my-2">Let&apos;s Connect</h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           I&apos;m always on the lookout for new opportunities and collaborations. Feel free to reach out to me via email at <a href="mailto:aadipa25@gmail.com" className="text-[#1FA2FF]">aadipa25@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/in/aadi-patel/" className="text-[#1FA2FF]" target="_blank" rel="noopener noreferrer">LinkedIn</a>. I am looking forward to connecting with you!
         </p>
@@ -28,5 +28,4 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
-
 
