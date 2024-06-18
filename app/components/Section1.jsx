@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation'
@@ -39,7 +40,7 @@ const Section1 = () => {
           </p>
           <div>
             <a href="/Patel_Aadi_Resume.pdf" download="Aadi_Patel_Resume">
-              <button className="px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] hover:bg-slate-200 text-black">
+              <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#a6ffcb] via-[#12d8fa] to-[#1fa2ff] hover:bg-slate-800 text-black mt-3">
                 Download Resume
               </button>
             </a>
