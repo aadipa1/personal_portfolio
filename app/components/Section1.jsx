@@ -2,12 +2,18 @@
 import React from 'react'
 import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation'
+import { motion } from "framer-motion"
 
 const Section1 = () => {
   return (
     <section>
       <div className="grid grid-cols-1 sm:grid-cols-12">
-        <div className="col-span-7 place-self-center text-center sm:text-left">
+        <motion.div
+         initial={{ opacity:0, scale:0.5}} 
+         animate={{opacity:1, scale:1}} 
+         transition={{duration: 0.5}}
+         className="col-span-7 place-self-center text-center sm:text-left"
+         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold"> 
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1FA2FF] to-[#A6FFCB]">
               Hello, I'm {" "}
@@ -31,7 +37,7 @@ const Section1 = () => {
     /> 
           </h1>
           <p className = "text-base sm:text-lg mb-6 lg:text-xl text-[#ADB7BE]">
-            I am a Computer Science and Stastistics Student at UNC-Chapel Hill.
+            I am a Computer Science and Data Science at UNC-Chapel Hill.
           </p>
           <div>
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] hover:bg-slate-200 text-black">Contact Me</button>
@@ -41,8 +47,11 @@ const Section1 = () => {
                 </button>
             </a>
           </div>
-        </div>
-        <div className="col-span-5 place-self-center mt-4 lg:mt-0">
+        </motion.div>
+        <motion.div
+         initial={{ opacity:0, scale:0.5}} 
+         animate={{opacity:1, scale:1}} 
+         transition={{duration: 0.5}} className="col-span-5 place-self-center mt-4 lg:mt-0">
           <div className = "w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <Image
             src="/headshot.JPG"
@@ -52,7 +61,7 @@ const Section1 = () => {
             height={300}
             />
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   )
