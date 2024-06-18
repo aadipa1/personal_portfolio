@@ -20,7 +20,7 @@ const TAB_DATA = [
         )
     },
     {
-        tile: "Education",
+        title: "Education", // Fixed the typo here from "tile" to "title"
         id: "Education",
         content: (
             <ul className="list-disc pl-2">
@@ -47,15 +47,15 @@ const AboutSection = () => {
             <motion.div initial={{ opacity:0, scale:0.5}} 
          animate={{opacity:1, scale:1}} 
          transition={{duration: 0.5}} className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-                <Image src="/UNC.png" width={500} height={500} />
+                <Image src="/UNC.png" alt="UNC logo" width={500} height={500} />
                 <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                     <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
                     <p className="text-base lg:text-lg">
-                        I'm an undergraduate student at the University of North Carolina at Chapel Hill, studying Computer Science and Data Science. 
-                        I'm interested in working in either the business/finance sector or the sports industry. 
+                        I&apos;m an undergraduate student at the University of North Carolina at Chapel Hill, studying Computer Science and Data Science. 
+                        I&apos;m interested in working in either the business/finance sector or the sports industry. 
                         My skills in Python, R, and SQL make me passionate about using data to solve problems and make informed decisions.
-                        Whether it's helping a business grow or improving a sports team's performance through analytics, 
-                        I'm excited to apply my knowledge and make a difference in these areas.
+                        Whether it&apos;s helping a business grow or improving a sports team&apos;s performance through analytics, 
+                        I&apos;m excited to apply my knowledge and make a difference in these areas.
                     </p>
                     <div className="flex flex-row justify-start mt-8">
                         <TabButton 
