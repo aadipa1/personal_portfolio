@@ -39,7 +39,7 @@ const Section1 = () => {
             I am a Computer Science and Data Science student at UNC-Chapel Hill.
           </p>
           <div>
-            <a href="/Patel_Aadi_Resume.pdf" download="Aadi_Patel_Resume">
+            <a href="/Aadi_Patel_Resume.pdf" download="Aadi_Patel_Resume">
               <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#a6ffcb] via-[#12d8fa] to-[#1fa2ff] hover:bg-slate-800 text-black mt-3">
                 Download Resume
               </button>
